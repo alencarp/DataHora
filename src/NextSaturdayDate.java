@@ -10,6 +10,7 @@ public class NextSaturdayDate {
     }
 
     private static LocalDate calcNextFriday(LocalDate d) {
+
         return d.with(TemporalAdjusters.next(DayOfWeek.SATURDAY));
     }
 }
